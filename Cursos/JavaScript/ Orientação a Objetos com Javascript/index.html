@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OPP JavaScript</title>
+</head>
+<body>
+    <p>OPP JavaScript</p>
+
+    <script>
+        
+        // ES5 Class
+        function Person(){
+            // Attributes
+            this.name;
+            this.age;
+            this.height;
+
+            // Methods
+            this.toString = function(){
+                console.log(this.name + ' ' + this.age + ' ' + this.height);
+            }
+
+        }
+        // var Person = function Person(){
+        // }
+        // var Person = {}
+
+        // Instance object Person()
+        var jose = new Person();
+        jose.name = 'José';
+        jose.age = 19;
+        jose.height = 1.70;
+        jose.toString();
+
+        console.log(jose);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Base64 Convert</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/photon.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Javascript -->
+    <script src="js/menu.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="window">
+      <main class="window-content">
+        <div class="pane-group">
+          <div class="pane padding">
+
+            <form class="form-group">
+              <input type="text" class="form-control" name="txt" id="txt" placeholder="Value">
+
+              <br>
+              <br>
+
+              <button type="button" class="btn btn-primary" onclick="onGenerate()">Generate</button>
+              <button type="button" class="btn btn-primary" onclick="onDecode()">Decode</button>
+
+            </form>
+          
+            <textarea disabled class="form-control" id="result" rows="3" placeholder="Result"></textarea>
+
+            <br>
+
+            <button class="btn btn-negative" onclick="onClear()">Clear</button>
+
+          </div>
+        </div>
+      </main>
+      
+      <footer class="toolbar toolbar-footer">
+        <p class="title">&copy; Copyright</p>
+      </footer>
+    </div>
+    <script src="./scripts/app.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

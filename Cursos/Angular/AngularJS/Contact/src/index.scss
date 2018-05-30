@@ -1,0 +1,36 @@
+body {
+  font-family: Verdana;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+  padding: 0.5em;
+  width: 15em;
+  height: 0.8em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #6ca5ff;
+}
+
+
+button {
+  padding: 0.8em;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #6ca5ff;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #6ca5ff;
+  color: #FFF;
+}
+
+table, th, td {
+  border: 1px solid #6ca5ff;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
