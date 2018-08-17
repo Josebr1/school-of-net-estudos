@@ -23,6 +23,8 @@ Todos os exemplos aqui presentes são feito durante o acompanhamento dos vários
     - TDD - Node
 - React
     - Iniciando com React.js
+    - React com Redux
+    - Avancando com React e Redux Redux Sauce
     - React-GitHub
 - PHP
     - Laravel-Lumen
@@ -50,6 +52,8 @@ Todos os exemplos aqui presentes são feito durante o acompanhamento dos vários
     - NPM (https://www.npmjs.com/)
     - Yarn (https://yarnpkg.com/pt-BR/)
     - React (https://reactjs.org/)
+    - Redux (https://redux.js.org/)
+    - reduxsauce (https://github.com/infinitered/reduxsauce)
     - Visual Code (https://code.visualstudio.com/)
 
 - PHP (http://php.net/)
