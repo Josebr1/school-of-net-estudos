@@ -8,9 +8,9 @@ const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');
 
 const path = {
-    htmlSrc: 'scr/views',
-    sassSrc: 'public/scss',
-    jsSrc: 'public/js',
+    htmlSrc: 'scr/views/',
+    sassSrc: 'public/scss/',
+    jsSrc: 'public/js/',
 
     buildDir: 'build/'
 };
@@ -34,12 +34,11 @@ let initServer = () => {
 	})
 }
 
-
 gulp.task('build-html', () => {
-    return gulp
-        .src(path.htmlSrc.concat('**/*.ejs'))
-        .pipe(gulp.dest(path.buildDir.concat('/views')))
-        .pipe(livereload());
+	return gulp
+			.src(path.htmlSrc.concat('**/*.ejs'))
+			.pipe(gulp.dest(path.buildDir.concat('/views')))
+			.pipe(livereload())
 });
 
 gulp.task('build-css', () => {
@@ -82,5 +81,5 @@ const env = process.env.NODE_ENV || 'development';
 
 
 if (env === 'development') {
-    return gulp.task('default', ['build', 'watch'])
+	return gulp.task('default', ['build', 'watch'])
 }

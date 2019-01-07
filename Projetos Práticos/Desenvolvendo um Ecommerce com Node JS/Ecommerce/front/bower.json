@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce_front",
+  "description": "Ecommerce based node.js",
+  "main": "app.js",
+  "authors": [
+    "José Antônio <jose.silva.br@outlook.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ecommerce",
+    "node.js",
+    "mongodb",
+    "ejs"
+  ],
+  "homepage": "https://github.com/Josebr1/school-of-net-estudos",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.4.0"
+  }
+}
