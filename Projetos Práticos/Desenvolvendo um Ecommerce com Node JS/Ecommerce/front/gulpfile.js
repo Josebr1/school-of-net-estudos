@@ -8,10 +8,10 @@ const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');
 
 const path = {
-    htmlSrc: 'scr/views/',
-    sassSrc: 'public/scss/',
+    htmlSrc: './src/views/',
+    sassSrc: './public/scss/',
     jsSrc: 'public/js/',
-
+    imgSrc: 'public/images/',
     buildDir: 'build/'
 };
 
@@ -56,6 +56,14 @@ gulp.task('build-css', () => {
         .pipe(livereload());
 });
 
+gulp.task('build-images', () => {
+    return gulp
+        .src(path.imgSrc.concat('**/*.+(png|jpeg|jpg|gif|svg)'))
+        .pipe(changed(path.buildDir.concat('/images')))
+        .pipe(gulp.dest(path.buildDir.concat('/images')))
+        .pipe(livereload());
+});
+
 gulp.task('build-js', () => {
     return gulp
         .src(path.jsSrc.concat('*.js'))
@@ -66,7 +74,7 @@ gulp.task('build-js', () => {
 });
 
 
-gulp.task('build', ['build-html', 'build-css', 'build-js'] , () => {
+gulp.task('build', ['build-html', 'build-css', 'build-js', 'build-images'] , () => {
 	return initServer()
 })
 
